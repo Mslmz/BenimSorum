@@ -1,0 +1,5 @@
+Balıkesir Otoyol  çıkısında ki araçların tiplerine göre ödenecek olan ücretlerin hesaplanmasını ve bu kayıtların tutulmasını sağlayan bir sistem oluşturulacakatır. Sistem numarası , aracın tipi (Otomobil, Otobüs, Minibüs, Motor), giriş bilgileri ve saat bilgileri olacaktır.
+
+1- Java dilinde istenilen soruyu kodlayınız. Soruda olan araç tiplerine göre ayrı sınıflar oluşturmanız istenmektedir.      
+ 2-   Ödeme yapılacak fonksiyon için giriş sınıfı ekleyiniz. Giriş fonksiyonu bu araç tiplerini tanımlayan ve hesabınızda ki ücreti bu sınıflara göre düşüren bir fonksiyon olması gerekir. 
+3-     Giriş sınıfı için günlük olarak geçen araçların kayıt altına alınması gerekmektedir. Toplam bakiye sınıfı oluşturup burada günlük toplam alınan para miktarı yazılacaktır. 
