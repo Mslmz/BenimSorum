@@ -1,0 +1,69 @@
+interface OtoyolCıkıs{
+    int odeme();
+}
+abstract class OtoyolArac implements OtoyolCıkıs{
+    int bakiye ;
+    int ucret;
+    public int odeme(){
+        bakiye -= ucret;
+        return bakiye;
+    }
+}
+class otomobil extends OtoyolArac{
+    public otomobil(){
+        ucret = 50 ;
+    }
+}
+ 
+class minibus extends OtoyolArac{
+    public minibus(){
+        ucret = 50
+    }
+}
+class otobus extends OtoyolArac{
+    public otobus(){
+        ucret = 75
+    }
+}
+class motor extends OtoyolArac{
+    public motor(){
+        ucret = 25
+    }
+}
+
+class giris{
+   OtoyolGiris liste[];
+    int i ;
+    public giris(){
+        liste = new OtoyolGiris 20 ];
+        i= 0 ;
+    }
+    void odemeyap(OtoyolGiris v){
+        liste[i++] = v;
+        v.odeme();
+    }
+}
+class bakiye{
+    public void raporla(gise g){
+        int toplam = 0 ;
+        for ( int i = 0 ;i<g.i;i++){
+            System.out.println(((OtoyolArac)g.liste[i]).ucret);
+             toplam += (((OtoyolArac)g.liste[i]).ucret);
+        }
+        System.out.println( “—– n Toplam : “ + toplam);
+    }
+}
+public class deneme{
+    public static void main(String args[]){
+        otobus o = new otobus();
+        o.bakiye = 100 ;
+        gise g = new gise();
+        g.odemeAl(o);
+        otomobil oto = new otomobil();
+        oto.bakiye = 70 ;
+        g.odemeAl(oto);
+        g.odemeAl(o);
+        bakiye y = new bakiye();
+        y.raporla(g);
+    }
+}
